@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "6312",
+      "companyName": "DigiNation",
+      "email": "info@diginationmea.com",
+      "password": "Dig@2026"
+    }
+  ],
+  "admins": [
+    {
+      "id": "1",
+      "name": "Tamm",
+      "email": "admin@tamm.com",
+      "password": "Admin@2026"
+    }
+  ],
+  "jobs": [],
+  "candidates": []
+}

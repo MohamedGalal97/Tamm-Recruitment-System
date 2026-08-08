@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tamm | Admin Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="admin-login-section">
+        <div class="admin-login-card">
+          <header class="admin-login-header">
+            <img src="../images/logo.png" alt="Tamm Logo" class="logo" />
+
+            <h1>Admin Log In</h1>
+
+            <p>Log in with your Tamm admin account</p>
+          </header>
+
+          <form id="adminLoginForm" class="admin-login-form">
+            <label for="adminEmail"> Email </label>
+
+            <input
+              type="email"
+              id="adminEmail"
+              name="email"
+              placeholder="e.g. name@company.com"
+              required
+            />
+
+            <label for="adminPassword"> Password </label>
+
+            <input
+              type="password"
+              id="adminPassword"
+              name="password"
+              placeholder="••••••••"
+              required
+            />
+
+            <button type="submit" class="admin-login-btn">Log In</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

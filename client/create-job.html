@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tamm | Create Job Request</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <img src="../images/logo.png" alt="Tamm Logo" class="logo" />
+
+        <nav class="sidebar-nav">
+          <a href="dashboard.html" class="nav-link"> Dashboard </a>
+
+          <a href="create-job.html" class="nav-link active">
+            Create Job Request
+          </a>
+
+          <a href="my-jobs.html" class="nav-link"> My Job Requests </a>
+        </nav>
+
+        <a href="login.html" class="logout-link"> Log Out </a>
+      </aside>
+
+      <main class="main-content">
+        <header class="create-job-header">
+          <h1>Create Job Request</h1>
+        </header>
+
+        <form id="jobRequestForm" class="create-job-form">
+          <label for="companyName"> Company Name </label>
+
+          <input
+            type="text"
+            id="companyName"
+            name="companyName"
+            placeholder="e.g. Tamm Inc."
+            readonly
+            required
+          />
+
+          <label for="department"> Department </label>
+
+          <input
+            type="text"
+            id="department"
+            name="department"
+            placeholder="e.g. Product"
+            required
+          />
+
+          <label for="employmentType"> Employment Type </label>
+
+          <select id="employmentType" name="employmentType" required>
+            <option value="">Select Employment Type</option>
+
+            <option value="full-time">Full Time</option>
+
+            <option value="part-time">Part Time</option>
+          </select>
+
+          <label for="workType"> Work Type </label>
+
+          <select id="workType" name="workType" required>
+            <option value="">Select Work Type</option>
+
+            <option value="onsite">On-site</option>
+
+            <option value="remote">Remote</option>
+
+            <option value="hybrid">Hybrid</option>
+          </select>
+
+          <label for="experience"> Required Experience </label>
+
+          <input
+            type="text"
+            id="experience"
+            name="experience"
+            placeholder="e.g. 3+ years"
+            required
+          />
+
+          <label for="jobTitle"> Job Title </label>
+
+          <input
+            type="text"
+            id="jobTitle"
+            name="jobTitle"
+            placeholder="e.g. Senior UX Designer"
+            required
+          />
+
+          <label for="location"> Location </label>
+
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="e.g. Riyadh, Saudi Arabia"
+            required
+          />
+
+          <label for="salary"> Salary </label>
+
+          <input
+            type="text"
+            id="salary"
+            name="salary"
+            placeholder="e.g. SAR 12,000 - 16,000"
+            required
+          />
+
+          <label for="jobDescription"> Job Description </label>
+
+          <textarea
+            id="jobDescription"
+            name="jobDescription"
+            rows="5"
+            required
+          ></textarea>
+
+          <label for="requirements"> Requirements </label>
+
+          <textarea
+            id="requirements"
+            name="requirements"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

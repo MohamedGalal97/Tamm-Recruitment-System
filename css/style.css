@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: #f4f6f9;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #0f86f2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: #1c2434;
+}
+
+p {
+  color: #555;
+}
+
+/* Buttons */
+button,
+.login-btn,
+.signup-btn,
+.forgot-btn,
+.admin-login-btn,
+.submit-btn,
+.create-request-btn,
+.accept-btn,
+.reject-btn,
+.remove-btn,
+.close-request-btn,
+.send-client-btn,
+.view-details-btn,
+.view-candidates-btn,
+.view-cv-btn {
+  background-color: #0f86f2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover,
+.login-btn:hover,
+.signup-btn:hover,
+.forgot-btn:hover,
+.admin-login-btn:hover,
+.submit-btn:hover,
+.create-request-btn:hover,
+.send-client-btn:hover,
+.view-details-btn:hover,
+.view-candidates-btn:hover,
+.view-cv-btn:hover {
+  background-color: #0f86f2;
+  transform: translateY(-1px);
+}
+
+.accept-btn {
+  background-color: #16a34a;
+}
+.accept-btn:hover {
+  background-color: #15803d;
+}
+
+.reject-btn,
+.remove-btn,
+.close-request-btn {
+  background-color: #fff;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+}
+.reject-btn:hover,
+.remove-btn:hover,
+.close-request-btn:hover {
+  background-color: #fef2f2;
+}
+
+.accept-btn,
+.reject-btn,
+.remove-btn,
+.close-request-btn {
+  padding: 8px 14px;
+}
+
+.close-request-btn:disabled {
+  background-color: #f4f6f9;
+  color: #9aa1ac;
+  border-color: #d7dce4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Authentication Pages */
+.login-section,
+.signup-section,
+.forgot-section,
+.admin-login-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.login-card,
+.signup-card,
+.forgot-card,
+.admin-login-card {
+  width: 100%;
+  max-width: 380px;
+  background-color: #fff;
+  border: 1px solid #d7dce4;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.login-header,
+.signup-header,
+.forgot-header,
+.admin-login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.login-header h1,
+.signup-header h1,
+.forgot-header h1,
+.admin-login-header h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.login-header p,
+.signup-header p,
+.forgot-header p,
+.admin-login-header p {
+  font-size: 13px;
+}
+
+.login-form,
+.signup-form,
+.forgot-form,
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label,
+.signup-form label,
+.forgot-form label,
+.admin-login-form label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.login-form input,
+.signup-form input,
+.forgot-form input,
+.admin-login-form input {
+  padding: 10px;
+  border: 1px solid #d7dce4;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-btn,
+.signup-btn,
+.forgot-btn,
+.admin-login-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.signup-link,
+.login-link,
+.back-login {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+/* Layout */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #fff;
+  border-right: 1px solid #d7dce4;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  margin: 0 10px 25px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: #4b5568;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.nav-link:hover {
+  background-color: #f4f6f9;
+}
+.nav-link.active {
+  background-color: #e6f0ef;
+  color: #2023dd;
+  font-weight: bold;
+}
+
+.logout-link {
+  margin-top: auto;
+  display: block;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #f1d3d3;
+  font-size: 13px;
+  font-weight: 600;
+  color: #dc2626;
+  transition: 0.2s ease;
+}
+.logout-link:hover {
+  background-color: #fef2f2;
+  border-color: #dc2626;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+}
+
+/* Dashboard */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.topbar h1 {
+  font-size: 22px;
+}
+
+.user-chip {
+  font-size: 13px;
+  color: #4b5568;
+  background-color: #fff;
+  border: 1px solid #d7dce4;
+  border-radius: 20px;
+  padding: 6px 15px;
+}
+
+.welcome-section {
+  margin-bottom: 20px;
+}
+.welcome-section h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.stat-card {
+  background-color: #fff;
+  border: 1px solid #d7dce4;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.stat-card h3 {
+  font-size: 28px;
+}
+.stat-card p {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Create Job */
+.create-job-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-job-form {
+  display: flex;
+  flex-direction: column;
+}
+.create-job-form label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.create-job-form input,
+.create-job-form select,
+.create-job-form textarea {
+  padding: 10px;
+  border: 1px solid #d7dce4;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.submit-btn {
+  margin-top: 20px;
+}
+
+/* Job Requests Lists */
+.job-requests-header,
+.admin-dashboard-header,
+.review-candidates-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.requests-list,
+.job-requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.request-card,
+.job-request-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #fff;
+  border: 1px solid #d7dce4;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.request-info,
+.job-request-info {
+  flex: 1;
+}
+.request-info h2,
+.job-request-info h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.request-info p,
+.job-request-info p {
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.view-details-btn,
+.view-candidates-btn,
+.view-cv-btn {
+  margin-top: 10px;
+}
+
+/* Candidates */
+.candidates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.candidate-card {
+  background-color: #fff;
+  border: 1px solid #d7dce4;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+.candidate-card h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.candidate-card p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.candidate-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.decision-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Job Details (Job Request Details page + Review Candidates header) */
+.job-details-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job-details-content {
+  margin-top: 20px;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+}
+.detail-item h2 {
+  font-size: 20px;
+}
+.detail-item h3 {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 4px;
+}
+.detail-item p {
+  font-size: 14px;
+  color: #222;
+}
+
+/* Upload & Manage CVs */
+.upload-area {
+  background-color: #fff;
+  border: 1px dashed #d7dce4;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.upload-area h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.uploaded-cvs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cv-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d7dce4;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+.cv-info h3 {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.cv-info p {
+  font-size: 12px;
+}
+
+.send-client-btn {
+  margin-top: 10px;
+}

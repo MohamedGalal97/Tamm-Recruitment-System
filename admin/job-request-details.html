@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tamm | Job Request Details</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <img src="../images/logo.png" alt="Tamm Logo" class="logo" />
+
+        <nav class="sidebar-nav">
+          <a href="admin-dashboard.html" class="nav-link"> Dashboard </a>
+
+          <a href="job-request-details.html" class="nav-link active">
+            Job Request Details
+          </a>
+        </nav>
+
+        <a href="admin-login.html" class="logout-link"> Log Out </a>
+      </aside>
+
+      <main class="main-content">
+        <header class="job-details-header">
+          <h1>Job Request Details</h1>
+        </header>
+
+        <section class="job-details-content" id="jobDetailsContainer">
+          <div class="detail-item">
+            <h2 id="jobTitle"></h2>
+          </div>
+
+          <div class="detail-item">
+            <h3>Status</h3>
+
+            <p id="jobStatus"></p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Company</h3>
+
+            <p id="jobCompany"></p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Department</h3>
+
+            <p id="jobDepartment"></p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Employment Type</h3>
+
+            <p id="jobEmploymentType"></p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Work Type</h3>
+
+            <p id="jobWorkType"></p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Location</h3>
+
+            <p id="jobLocation"></p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Experience</h3>
+
+            <p id="jobExperience"></p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Salary</h3>
+
+            <p id="jobSalary"></p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Description</h3>
+
+            <p id="jobDescription"></p>
+          </div>
+
+          <div class="detail-item">
+            <h3>Requirements</h3>
+
+            <p id="jobRequirements"></p>
+          </div>
+        </section>
+
+        <section class="upload-area">
+          <h2>Upload CVs</h2>
+
+          <input type="file" id="cvUpload" name="cvUpload" multiple />
+        </section>
+
+        <section class="uploaded-cvs" id="uploadedCvsContainer"></section>
+
+        <button type="button" class="send-client-btn">Send to Client</button>
+      </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

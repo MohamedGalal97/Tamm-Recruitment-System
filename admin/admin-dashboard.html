@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tamm | Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <img src="../images/logo.png" alt="Tamm Logo" class="logo" />
+
+        <nav class="sidebar-nav">
+          <a href="admin-dashboard.html" class="nav-link active"> Dashboard </a>
+
+          <a href="job-request-details.html" class="nav-link">
+            Job Request Details
+          </a>
+        </nav>
+
+        <a href="admin-login.html" class="logout-link"> Log Out </a>
+      </aside>
+
+      <main class="main-content">
+        <header class="admin-dashboard-header">
+          <h1>Dashboard</h1>
+
+          <p>Incoming Job Requests</p>
+
+          <p>Job requests submitted by clients</p>
+        </header>
+
+        <section class="job-requests-list" id="adminJobsContainer"></section>
+      </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

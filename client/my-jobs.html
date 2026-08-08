@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tamm | My Job Requests</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <img src="../images/logo.png" alt="Tamm Logo" class="logo" />
+
+        <nav class="sidebar-nav">
+          <a href="dashboard.html" class="nav-link"> Dashboard </a>
+
+          <a href="create-job.html" class="nav-link"> Create Job Request </a>
+
+          <a href="my-jobs.html" class="nav-link active"> My Job Requests </a>
+        </nav>
+
+        <a href="login.html" class="logout-link"> Log Out </a>
+      </aside>
+
+      <main class="main-content">
+        <header class="job-requests-header">
+          <h1>My Job Requests</h1>
+
+          <p id="jobsCount">0 Job Requests</p>
+        </header>
+
+        <section class="requests-list" id="jobsContainer"></section>
+      </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
